@@ -12,14 +12,14 @@ Chart.register(...registerables);
 })
 export class ResearcherComponent implements OnInit {
   constructor() { }
-  showComponent: boolean = true;
+  showComponent: boolean = false;
   pat : any = '/researcher';
-  
+
   ngOnInit(): void {
-   
+
     this.createPieChart();
   }
- 
+
 
   toggleComponent(): void {
 
@@ -73,8 +73,8 @@ export class ResearcherComponent implements OnInit {
     link.click();
     document.body.removeChild(link);
   }
-  
 
-  
+
+
 }
 

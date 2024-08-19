@@ -13,6 +13,7 @@ import { ComponentsModule } from '../components/components.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ChatComponent } from '../components/chat/chat.component';
+import { DoctorComponent } from './doctor/doctor.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ChatComponent } from '../components/chat/chat.component';
     LoginComponent,
     ChatComponent,
     ProfileComponent,
-    PredictionComponent ],
+    PredictionComponent,
+    DoctorComponent ],
   imports: [
     CommonModule,
     ComponentsModule,

@@ -1,4 +1,31 @@
 <app-sidebar></app-sidebar>
+<div class="container" style="margin-bottom: 500px;">
+  <h1>Please upload the information of the patient</h1>
+ <div class="file-upload-container">
+  <label for="infos" class="file-upload-button">Please upload the information of the patient</label>
+  <input type="file" id="infos" name="infos" accept="application/pdf" class="file-upload" onchange="updateFileName()">
+  <div id="file-name" class="file-name"></div>
+</div>
+
+<script>
+  function updateFileName() {
+    const input = document.getElementById('infos');
+    const fileName = document.getElementById('file-name');
+    fileName.textContent = input.files[0] ? input.files[0].name : 'No file chosen';
+  }
+</script>
+
+  <button type="submit">Predict</button>
+
+
+  <div *ngIf="prediction" class="prediction">
+    <h2>Prediction Result:</h2>
+    <p>{{ prediction }}</p>
+  </div>
+</div>
+
+
+
 <div class="container">
   <h1>Please insert the information of the patient</h1>
   <form (ngSubmit)="onSubmit(form)" #form="ngForm">

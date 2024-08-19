@@ -1,0 +1,159 @@
+<app-sidebar></app-sidebar>
+<header>
+  <div class="welcome">Welcome on MicroScan</div>
+</header>
+<body>
+
+  <main class="main">
+    <section class="dashboard">
+      <div class="welcome-container">
+        <div class="welcome-text">Welcome Doctor Mike!</div>
+        <div class="doctor-photo">
+          <img src="../../../assets/img/doctor.jpg" alt="Doctor">
+        </div>
+      </div>
+
+      <section class="overview-cards">
+        <div class="card">
+          <h3>Total Patient</h3>
+          <p>2000+<br>Till Today</p>
+        </div>
+        <div class="card">
+          <h3>Today Patient</h3>
+          <p>068<br>21 Dec 2024</p>
+        </div>
+        <div class="card">
+          <h3>Today Appointments</h3>
+          <p>085<br>21 Dec 2024</p>
+        </div>
+      </section>
+      <section class="patient-summary">
+        <div class="chart">
+          <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-4">Liste des patients</h2>
+            <div class="space-y-6">
+              <!-- Card 1 -->
+              <div class="bg-white shadow-lg rounded-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300 space">
+                <div class="flex items-center space">
+                  <img class="w-16 h-16 rounded-full mr-6" style="margin: 5px;" src="../../../assets/Images/Patients/John.png" alt="Patient Photo">
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">John Doe</h3>
+                    <p class="text-gray-500">Patient</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button class="space bg-[#6398AC] text-white px-6 py-3 rounded-full transition-transform transform hover:scale-105" routerLink="/patient">See the result of the prediction</button>
+                  <button class="space bg-[#707FDD] text-white px-6 py-3 rounded-full transition-transform transform hover:scale-105" routerLink="/profil">See profile</button>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-white shadow-md rounded-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300 space">
+                <div class="flex items-center space">
+                  <img class="w-16 h-16 rounded-full mr-6" style="margin: 5px;" src="../../../assets/Images/Patients/Jane.png" alt="Patient Photo">
+                  <div>
+                    <h3 class="text-lg font-semibold">Jane Smith</h3>
+                    <p class="text-gray-600">Patient</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button class="space bg-[#6398AC] text-white px-6 py-3 rounded-full transition-transform transform hover:scale-105" routerLink="/patient">See the result of the prediction</button>
+                  <button class="space bg-[#707FDD] text-white px-6 py-3 rounded-full transition-transform transform hover:scale-105" routerLink="/profil">See profile</button>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-white shadow-md rounded-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300 space">
+                <div class="flex items-center space">
+                  <img class="w-16 h-16 rounded-full mr-6" style="margin: 5px;" src="../../../assets/Images/Patients/Alice.png" alt="Patient Photo">
+                  <div>
+                    <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                    <p class="text-gray-600">Patient</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button class="space bg-[#6398AC] text-white px-6 py-3 rounded-full transition-transform transform hover:scale-105" routerLink="/patient">See the result of the prediction</button>
+                  <button class="space bg-[#707FDD] text-white px-6 py-3 rounded-full transition-transform transform hover:scale-105" routerLink="/profil">See profile</button>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        </div>
+      </section>
+      <section class="appointment-details">
+        <div class="today-appointment">
+          <h3>Today Appointment</h3>
+          <ul>
+            <li>
+              <span class="name">M.J. Mical</span>
+              <span class="diagnosis">Health Checkup</span>
+              <span class="status">On Going</span>
+            </li>
+            <li>
+              <span class="name">Sanath Deo</span>
+              <span class="diagnosis">Health Checkup</span>
+              <span class="time">12:30 PM</span>
+            </li>
+            <li>
+              <span class="name">Loeara Phanj</span>
+              <span class="diagnosis">Report</span>
+              <span class="time">01:00 PM</span>
+            </li>
+            <li>
+              <span class="name">Komola Haris</span>
+              <span class="diagnosis">Common Cold</span>
+              <span class="time">01:30 PM</span>
+            </li>
+          </ul>
+        </div>
+        <div class="next-patient-details">
+          <h3>Next Patient Details</h3>
+          <div class="patient-card">
+            <img src="assets/img/doctor.jpg" alt="Patient">
+            <div class="patient-info">
+              <p><strong>Sanath Deo</strong><br>Health Checkup</p>
+              <p>D.O.B: 15 January 1989</p>
+              <p>Sex: Male</p>
+              <p>Weight: 59 Kg</p>
+              <p>Last Appointment: 15 Dec 2024</p>
+              <p>Height: 172 cm</p>
+              <p>Reg. Date: 10 Dec 2024</p>
+            </div>
+          </div>
+          <div class="patient-history">
+            <p>Patient History</p>
+            <ul>
+              <li>Asthma</li>
+              <li>Hypertension</li>
+              <li>Fever</li>
+            </ul>
+            <div class="contact-options">
+              <button>📞 Call</button>
+              <button>📄 Document</button>
+              <button>💬 Chat</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+
+  </main>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
